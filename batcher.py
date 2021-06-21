@@ -75,6 +75,8 @@ def batch(input_file_name, output_file_name, character_limit, words_limit):
         write_batch(writer, batch, number_of_batches + 1, batch_character_count)
 
     save_known_words(known_words)
+    
+    return output_file_name
 
 
 def main():
